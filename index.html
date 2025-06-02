@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/projeto-digital-store/favicon-light-32x32.png" sizes="32x32" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" href="/projeto-digital-store/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Store</title>
+    <script>
+      (function () { // Executa a correção de URL ANTES do React carregar
+        const params = new URLSearchParams(window.location.search);
+        const redirect = params.get('redirect');
+
+        if (redirect) {
+          // Remove o parâmetro da URL sem recarregar a página
+          window.history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/projeto-digital-store/assets/index-Dipjiwew.js"></script>
+    <link rel="stylesheet" crossorigin href="/projeto-digital-store/assets/index-DF2SVZWv.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
