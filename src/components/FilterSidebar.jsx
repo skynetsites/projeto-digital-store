@@ -60,7 +60,8 @@ const FilterSidebar = ({ products, setSortOption, activeFilters, filterText, chi
           content={({ closeIconRef, hide }) => (
             <div className="flex flex-column h-screen w-full">
               {/* Conteúdo rolável + botão fechar */}
-              <div className="flex-grow-1 overflow-auto w-full box-border">
+              <div className="flex-grow-1 overflow-auto w-full box-border overflow-y-auto"
+              style={{ scrollbarWidth: "none" }}>
                 <div className="absolute w-full right-0 mr-3 mt-4 flex justify-content-end align-items-end">
                   <Button
                     type="button"

@@ -28,8 +28,7 @@ const NavSidebar = ({ menuheader, menu, currentPath }) => {
         visible={visible}
         onHide={() => setVisible(false)}
         position="left"
-        className="flex flex-column justify-content-between gap-3 w-10 pt-5 px-4"
-        aria-label="Menu de navegação"
+        className="flex flex-column justify-content-between gap-3 pt-5 px-4"
         content={() => (
           <>
             <div className="flex-1">

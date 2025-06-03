@@ -95,7 +95,7 @@ const SearchBar = () => {
         className="absolute left-0 top-0 w-full bg-white p-3 md:mt-0 md:p-0
           md:static md:mt-0 md:px-0 md:pb-0 
           md:flex md:flex-1 md:relative"
-          style={{ ...(isVisible && { marginTop: "4.8rem" }) }}
+          style={{ ...(isVisible && { marginTop: "4rem" }) }}
           hidden={!isVisible}
       >
         <div className="relative w-full bg-gray-200 border-round-lg" style={{ maxWidth: "100%" }}>
@@ -165,7 +165,8 @@ const SearchBar = () => {
       <i
         className="pi pi-search relative text-light-gray-2 text-xl block md:hidden cursor-pointer"
         onClick={toggleDiv}
-        aria-label="Toggle Search"
+        aria-label="Pesquisar"
+        style={{ marginRight: "-1rem" }}
       ></i>
     </>
   );

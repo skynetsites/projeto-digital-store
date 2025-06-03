@@ -15,8 +15,8 @@ import { RadioButton } from 'primereact/radiobutton';
   };
 
   return (
-    <div className="filter-group pb-2">
-      <h4>{title}</h4>
+    <div className="py-2">
+      <h4 className='mt-0 mb-3'>{title}</h4>
       {/* Mapeia as opções e cria checkbox ou radio pra cada uma */}
       {options.map((option) => {
         // Checa se a opção tá selecionada (diferente pra checkbox e radio)

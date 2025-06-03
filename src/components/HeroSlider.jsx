@@ -24,7 +24,7 @@ const HeroSlider = ({ data }) => {
   return (
     <div className="relative w-full mb-4 xl:mb-5 overflow-hidden bg-gray-100">
       {/* Container principal do slider, altura fixa */}
-      <div className="relative max-w-75rem mx-auto p-3 xl:h-30rem" style={{ height: '42rem' }}>
+      <div className="relative max-w-75rem mx-auto p-3 xl:h-30rem" style={{ height: '43rem' }}>
         {/* Mapeia os slides */}
         {items.map(({ subtitle, title, description, link, label, image, width, rotate, }, i) => {
           // Só mostra o slide ativo e o anterior (pra transição ficar suave)
@@ -53,7 +53,7 @@ const HeroSlider = ({ data }) => {
                     src={image}
                     alt={title}
                     imageClassName='mr-0 xl:mr-9'
-                    style={{ width: `${width}rem`, marginLeft: '-1rem', objectFit: 'contain', transform: `rotate(${rotate}deg)` }}
+                    style={{ width: `${width}rem`, marginLeft: '-2rem', objectFit: 'contain', transform: `rotate(${rotate}deg)` }}
                   />
                 </figure>
 

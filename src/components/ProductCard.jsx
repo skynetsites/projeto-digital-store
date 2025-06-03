@@ -19,7 +19,7 @@ const ProductCard = ({ id, badge, name, image, category, price, price2 }) => {
       <Link to={`/produto/${id}`} className="flex flex-column" title={name}>
         {/* imagem do produto em circulo e sombra */}
         <figure
-          className="flex justify-content-center align-items-center h-10rem xl:h-17rem m-0 p-3 xl:p-5 bg-white border-round-sm"
+          className="flex justify-content-center align-items-center h-12rem xl:h-17rem m-0 p-3 xl:p-5 bg-white border-round-sm"
           style={{ boxShadow: "6px 16px 30px 0px #6962620D" }}
         >
           <Image

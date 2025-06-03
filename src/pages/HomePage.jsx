@@ -27,8 +27,8 @@ const HomePage = () => {
       {/* Seção de Coleções em destaque */}
       <Section
         sectionMb={2.8}
-        titleMb={1.2}
-        title="Coleções em destaque"
+        titleMb={1.5}
+        title="Coleções em Destaque"
       >
         <CollectionListing cols={[12, 6, 4]} data={collection} />
       </Section>
@@ -37,7 +37,7 @@ const HomePage = () => {
       <Section
         sectionMb={6}
         titleMb={1}
-        title="Coleções em destaque"
+        title="Categorias em Destaque"
         titleAlign="center"
       >
         <CategoryListing cols={[4, 3, 2]} data={category} />
@@ -45,7 +45,7 @@ const HomePage = () => {
 
       {/* Seção de Produtos em destaque */}
       <Section
-        title="Produtos em Destaque"
+        title="Produtos em Alta"
         titleMb={2}
         sectionMb={3}
         link={{ text: "Ver todos", href: "/produtos" }}

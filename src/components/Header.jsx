@@ -52,10 +52,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      {/* Linha divisória entre topo e menu */}
-      <Divider className="bg-gray-900 m-0 p-0" />
-
+      
       {/* Menu principal, só aparece em tela grande */}
       <div className="hidden md:block">
         <div className="max-w-75rem mx-auto px-3">

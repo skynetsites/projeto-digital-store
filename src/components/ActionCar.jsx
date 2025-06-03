@@ -43,7 +43,7 @@ const ActionCar = () => {
       {/* Ícone do carrinho com badge mostrando o total de itens */}
       <i
         className="pi pi-shopping-cart p-overlay-badge text-pink-600 cursor-pointer text-xl"
-        onMouseOver={handleMouseOver}
+        onClick={handleMouseOver}
         aria-label="Carrinho"
       >
         <Badge

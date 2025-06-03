@@ -88,7 +88,7 @@ const Gallery = ({ product = {}, products }) => {
         {/* Botão anterior */}
         <button
           onClick={prev}
-          className="absolute left-0 top-50 translate-y--50 p-2 border-none bg-transparent font-bold text-xl cursor-pointer z-2"
+          className="absolute left-0 top-50 translate-y--50 p-0 pl-2 border-none bg-transparent font-bold text-xl cursor-pointer z-2"
           aria-label="Previous image"
         >
           <i className="pi pi-angle-left text-pink-700" style={{ fontSize: '2.5rem' }}></i>
@@ -97,7 +97,7 @@ const Gallery = ({ product = {}, products }) => {
         {/* Botão próximo */}
         <button
           onClick={next}
-          className="absolute right-0 top-50 translate-y--50 p-2 border-none bg-transparent font-bold text-xl cursor-pointer z-2"
+          className="absolute right-0 top-50 translate-y--50 p-0 pr-2 border-none bg-transparent font-bold text-xl cursor-pointer z-2"
           aria-label="Next image"
         >
           <i className="pi pi-angle-right text-pink-700" style={{ fontSize: '2.5rem' }}></i>

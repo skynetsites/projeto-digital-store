@@ -10,16 +10,16 @@ const {
   },
 } = SiteData;
 
-const filterTitle = ["Categoria", "Marca", "Gênero", "Condição"];
+const filterTitle = [ "Marca", "Categoria", "Gênero", "Condição" ];
 
 // junta os filtros numa variável só pra facilitar
-const filtersRaw = { category, brand, gender, condition };
+const filtersRaw = { brand, category, gender, condition };
 
 const ProductFilters = ({ filters = {}, updateFilter }) => {
   return (
     <>
-      <h3 className="mt-3">Filtrar por</h3>
-      <Divider className="m-0" />
+      <h3 className="my-3 md:mt-0">Filtrar por</h3>
+      <Divider className="mt-0 mb-3" />
 
       {/* renderiza grupo de filtros dinamicamente pra cada tipo */}
       {Object.entries(filtersRaw).map(([key, options], i) => {

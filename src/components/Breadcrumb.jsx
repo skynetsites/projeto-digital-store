@@ -9,9 +9,9 @@ const Breadcrumb = ({ product }) => {
   const { category, brand, name } = product;
 
   return (
-    <nav aria-label="Breadcrumb" className="mb-4">
+    <nav aria-label="Breadcrumb" className="mb-4 line-height-1">
       {/* Linha com os itens da trilha (Home > Produtos > etc) */}
-      <div className="flex flex-wrap items-center gap-1 text-base text-gray-800 font-bold leading-none">
+      <div className="flex flex-wrap items-center gap-1 text-lg xl:text-base text-gray-800 font-bold leading-none">
         {/* Link que leva pra Home */}
         <Link to="/" className="hover:text-pink-600 hover:underline">
           Home
