@@ -27,11 +27,10 @@ Criar uma aplicação web completa com React, implementando páginas principais 
 
 - [React](https://reactjs.org/)
 - [React Router DOM](https://reactrouter.com/)
-- [PrimeReact](https://primereact.org/)
 - [PrimeFlex](https://primeflex.org/)
 - [Vite](https://vitejs.dev/)
-- [GitHub](https://github.com/)
 - [Figma](https://figma.com/)
+- [GitHub](https://github.com/)
 
 ### 📊 Gráfico de Tecnologias Utilizadas
 
