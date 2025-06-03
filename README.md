@@ -83,6 +83,7 @@ Criar uma aplicação web completa com React, implementando páginas principais 
 │   ├── context/
 │   │   └── CartContext.jsx
 │   ├── data/
+│   │   ├── index.js
 │   │   └── SiteData.jsx
 │   ├── hooks/
 │   │   └── useQueryParams.jsx
