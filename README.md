@@ -45,9 +45,9 @@ Criar uma aplicação web completa com React, implementando páginas principais 
 - Layout responsivo com a biblioteca PrimeFlex
 - Sistema de busca com envio automático por URL
 - Menu lateral retrátil para smartphones e tablets
-- Carrinho atualização visual em tempo real
+- Carrinho com atualização visual em tempo real
 - Implementação visual de filtros e ordenação
-- Componentização da interface de página
+- Componentização da interface de páginas
 
 ---
 
