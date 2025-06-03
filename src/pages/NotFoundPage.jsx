@@ -28,7 +28,7 @@ const NotFoundPage = () => {
       <p className="mb-5 text-lg">{description}</p>
 
       {/* Botões de navegação interna */}
-      <div className="flex flex-column-reverse xl:flex-row w-full align-items-center justify-content-center gap-3">
+      <div className="flex flex-column xl:flex-row w-full align-items-center justify-content-center gap-3">
         {button.map(({ link, label, icon, style }, i) => (
           <Link
             key={i}

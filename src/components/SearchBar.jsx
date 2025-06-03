@@ -1,5 +1,5 @@
 // Importa o que será usado: funções, bibliotecas e dados
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
@@ -7,10 +7,13 @@ import { SiteData } from "../data"; // Dados vindos de um objeto externo
 
 const SearchBar = () => {
   // Estado pra controlar visibilidade da barra, texto da busca e dropdown de sugestões
-  const [isVisible, setIsVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
   const [query, setQuery] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
+  
+  const iconRef = useRef(null);
+  const op = useRef(null);
 
   // Pega os filtros de produtos do SiteData
   const {
@@ -19,8 +22,24 @@ const SearchBar = () => {
 
   // Abre/fecha a barra de busca no mobile
   const toggleDiv = () => {
-    setIsVisible((prev) => !prev);
+    setVisible((prev) => !prev);
   };
+
+  // Fecha a busca se clicar fora dele
+  useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      op.current &&
+      !op.current.contains(event.target) &&
+      iconRef.current &&
+      !iconRef.current.contains(event.target)
+    ) {
+      setVisible(false);
+    }
+  };
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => document.removeEventListener("mousedown", handleClickOutside);
+}, []);
 
   // Normaliza texto removendo acentos, minúsculas e espaços extras pra comparar fácil
   const normalizeText = (text) =>
@@ -92,11 +111,12 @@ const SearchBar = () => {
     <>
       {/* Barra de busca que aparece/desaparece no mobile e responsiva */}
       <div
-        className="absolute left-0 top-0 w-full bg-white p-3 md:mt-0 md:p-0
-          md:static md:mt-0 md:px-0 md:pb-0 
-          md:flex md:flex-1 md:relative"
-          style={{ ...(isVisible && { marginTop: "4rem" }) }}
-          hidden={!isVisible}
+        ref={op}
+        className="absolute left-0 top-0 w-full bg-white p-3 
+          md:mt-0 md:p-0 md:static md:mt-0 md:px-0 
+          md:pb-0 md:flex md:flex-1 md:relative"
+          style={{ ...(visible && { marginTop: "4rem" }),  }}
+          hidden={!visible}
       >
         <div className="relative w-full bg-gray-200 border-round-lg" style={{ maxWidth: "100%" }}>
           <div className="flex w-full items-center border rounded overflow-hidden">
@@ -163,10 +183,11 @@ const SearchBar = () => {
 
       {/* Ícone de lupa que mostra/esconde a barra no mobile */}
       <i
+        ref={iconRef}
         className="pi pi-search relative text-light-gray-2 text-xl block md:hidden cursor-pointer"
         onClick={toggleDiv}
         aria-label="Pesquisar"
-        style={{ marginRight: "-1rem" }}
+        style={{ marginRight: "-1.5rem" }}
       ></i>
     </>
   );

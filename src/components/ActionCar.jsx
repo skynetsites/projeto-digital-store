@@ -10,25 +10,33 @@ import { CartContext } from "../context/CartContext"; // contexto do carrinho
 const ActionCar = () => {
   // Setup inicial: navegação, referência do dropdown e visibilidade
   const navigate = useNavigate();
+  const iconRef = useRef(null);
   const op = useRef(null);
   const [visible, setVisible] = useState(false);
 
   // Pega dados e funções do carrinho pelo contexto
   const { cartItems, removeFromCart, clearCart } = useContext(CartContext);
 
-  // Mostra o carrinho quando passa o mouse
-  const handleMouseOver = () => setVisible(true);
+  // Abre/fecha o carrinho
+  const toggleDiv = () => {
+    setVisible((prev) => !prev);
+  };
 
   // Fecha o carrinho se clicar fora dele
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (op.current && !op.current.contains(event.target)) {
-        setVisible(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  const handleClickOutside = (event) => {
+    if (
+      op.current &&
+      !op.current.contains(event.target) &&
+      iconRef.current &&
+      !iconRef.current.contains(event.target)
+    ) {
+      setVisible(false);
+    }
+  };
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => document.removeEventListener("mousedown", handleClickOutside);
+}, []);
 
   // Calcula o total do carrinho (usa o preço promocional se tiver)
   const total = cartItems.reduce((sum, { price, price2, qty = 1 }) => {
@@ -42,8 +50,9 @@ const ActionCar = () => {
     <>
       {/* Ícone do carrinho com badge mostrando o total de itens */}
       <i
+        ref={iconRef}
         className="pi pi-shopping-cart p-overlay-badge text-pink-600 cursor-pointer text-xl"
-        onClick={handleMouseOver}
+        onClick={toggleDiv}
         aria-label="Carrinho"
       >
         <Badge

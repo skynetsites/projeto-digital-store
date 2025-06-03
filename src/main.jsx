@@ -14,7 +14,7 @@ const config = {
 // Monta a aplicação com os contextos e rotas
 createRoot(document.getElementById("root")).render(
   <PrimeReactProvider value={config}>
-    <BrowserRouter basename="/projeto-digital-store">
+    <BrowserRouter>
       <CartProvider>
         <App />
       </CartProvider>

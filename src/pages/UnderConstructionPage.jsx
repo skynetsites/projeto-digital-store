@@ -29,7 +29,7 @@ const UnderConstructionPage = () => {
       <p className="mb-5 text-lg">{description}</p>
 
       {/* Lista de botões com links internos, gerada a partir dos dados */}
-      <div className="flex flex-column-reverse xl:flex-row w-full align-items-center justify-content-center gap-3">
+      <div className="flex flex-column xl:flex-row w-full align-items-center justify-content-center gap-3">
         {button.map(({ link, label, icon, style }, i) => (
           <Link
             key={i}

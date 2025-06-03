@@ -33,7 +33,7 @@ const Section = ({ sectionMt = 2, sectionMb = 2, titleMb = 2, title, titleAlign 
             className={`flex ${justifyContentClass} align-items-center`}
             style={{ marginBottom: `${titleMb}rem` }}
           >
-            <h2 className="text-2xl xl:text-3xl m-0 font-bold">{title}</h2>
+            <h2 className="text-1xl xl:text-3xl m-0 font-bold">{title}</h2>
             {link && link.href && (
               <Link
                 to={link.href}
