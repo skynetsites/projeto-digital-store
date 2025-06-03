@@ -128,6 +128,7 @@ Siga os passos abaixo para clonar, instalar e rodar o projeto em sua máquina:
 
    ➜  Local:   http://localhost:5173/
 
+  
   Abra no navegador segurando Ctrl e clique no endereço local para visualizar o projeto.
 
 ---
