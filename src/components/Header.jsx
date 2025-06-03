@@ -5,7 +5,7 @@ import Logo from "./Logo";
 import ActionRegLog from "./ActionRegLog";
 import ActionCar from "./ActionCar";
 import NavSidebar from "./NavSidebar";
-import SearchBar from "./searchBar";
+import SearchBar from "./SearchBar";
 import MenuItems from "./MenuItems";
 import { SiteData } from "../data"; // Dados vindos de um objeto externo
 
