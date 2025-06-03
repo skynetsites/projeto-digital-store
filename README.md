@@ -14,7 +14,7 @@ Criar uma aplicação web completa com React, implementando páginas principais 
 ## 🧱 Estrutura do Projeto
 
 ### ✅ Requisitos Mínimos
-- Implementação dos requisitos obrigatórios listados na documentação oficial do projeto.
+- Implementação dos requisitos obrigatórios listados na [documentação oficial do projeto](https://github.com/digitalcollegebr/projeto-digital-store).
 
 ### 📄 Páginas Principais
 1. **Página Inicial**
@@ -42,9 +42,12 @@ Criar uma aplicação web completa com React, implementando páginas principais 
 ## 💻 Funcionalidades
 
 - Estrutura de navegação com React Router
-- Layout responsivo e fiel ao design fornecido
-- Componentização da interface
+- Layout responsivo com a biblioteca PrimeFlex
+- Sistema de busca com envio automático por URL
+- Menu lateral retrátil para smartphones e tablets
+- Carrinho atualização visual em tempo real
 - Implementação visual de filtros e ordenação
+- Componentização da interface de página
 
 ---
 
@@ -76,7 +79,7 @@ src/
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/projeto-digital-store.git
+   git clone https://github.com/skynetsites/projeto-digital-store.git
    ```
 
 2. Instale as dependências:
@@ -94,12 +97,12 @@ src/
 ## 🌐 Deploy
 
 Link do deploy:  
-[https://seu-deploy.vercel.app](https://seu-deploy.vercel.app)
+[https://skynetsites.github.io/projeto-digital-store](https://skynetsites.github.io/projeto-digital-store)
 
 ---
 
 ## 📎 Observações
 
-- "Ordenar por" e "Filtrar por" estão implementados apenas visualmente.
-- Projeto realizado para fins acadêmicos e não representa uma loja real.
+- "Ordenar por" e "Filtrar por" estão implementados apenas funcional e visual.
+- Projeto realizado para fins de estudo e não representa uma loja real.
 
