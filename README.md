@@ -99,19 +99,25 @@ Criar uma aplicação web completa com React, implementando páginas principais 
 
 ---
 
-## 🚀 Como Executar
+## 🚀 Como Executar o Projeto Localmente
+
+Projeto final Front-end é executado com React + Vite.
+
+Siga os passos abaixo para clonar, instalar e rodar o projeto em sua máquina:
+
+---
 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/skynetsites/projeto-digital-store.git
    ```
 
-2. Instale as dependências:
+2. Instale as dependências e certifique-se de que o Node.js está instalado:
    ```bash
    npm install
    ```
 
-3. Rode o projeto:
+4. Rode o projeto em ambiente de desenvolvimento:
    ```bash
    npm run dev
    ```
