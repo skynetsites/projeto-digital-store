@@ -7,7 +7,7 @@ Este projeto foi desenvolvido como parte do curso de **Desenvolvimento Web** da 
 
 ## 🎯 Objetivo
 
-Criar uma aplicação web completa com React, implementando páginas principais e estrutura visual com base em um projeto de e-commerce fictício.
+Criar uma aplicação web completa com React, implementando páginas principais e estrutura visual com base em um projeto de e-commerce com página de listagem e de visualização de produto.
 
 ---
 
