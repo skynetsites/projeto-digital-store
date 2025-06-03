@@ -1,6 +1,5 @@
 // Importa o que será usado: funções, bibliotecas, componentes e dados
 import { useLocation } from "react-router-dom";
-import { Divider } from "primereact/divider";
 import Logo from "./Logo";
 import ActionRegLog from "./ActionRegLog";
 import ActionCar from "./ActionCar";
