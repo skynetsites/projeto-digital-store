@@ -121,6 +121,22 @@ Siga os passos abaixo para clonar, instalar e rodar o projeto em sua máquina:
    ```bash
    npm run dev
    ```
+   
+5. Você verá um endereço local parecido com:
+
+   VITE v6.3.5 ready in 2933 ms
+
+  ➜  Local:   http://localhost:5173/
+
+  Abra no navegador segurando Ctrl e clique no endereço local para visualizar o projeto.
+
+---
+
+✅ Requisitos
+
+- Node.js versão 16 ou superior
+- npm (ou yarn)
+- Navegador moderno
 
 ---
 
