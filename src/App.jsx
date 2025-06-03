@@ -1,4 +1,4 @@
-// Importa libs principais e componentes do projeto
+// Importa o que será usado: funções, componentes, páginas e dados
 import { useEffect } from "react";
 import { Routes, Route, useLocation, matchPath } from "react-router-dom";
 import Layout from "./components/Layout";
