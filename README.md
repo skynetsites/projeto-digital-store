@@ -141,10 +141,13 @@ Siga os passos abaixo para clonar, instalar e rodar o projeto em sua máquina:
 
 ---
 
-## 🌐 Deploy
+## 🌐 Deploys
 
-Link do deploy:  
+Link do deploy GitHub:  
 [https://skynetsites.github.io/projeto-digital-store](https://skynetsites.github.io/projeto-digital-store)
+
+Link do deploy Vercel:  
+[https://projeto-digital-store-ciqz.vercel.app](https://projeto-digital-store-ciqz.vercel.app)
 
 ---
 
