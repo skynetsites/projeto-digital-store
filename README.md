@@ -126,7 +126,7 @@ Siga os passos abaixo para clonar, instalar e rodar o projeto em sua máquina:
 
    VITE v6.3.5 ready in 2933 ms
 
-  ➜  Local:   http://localhost:5173/
+   ➜  Local:   http://localhost:5173/
 
   Abra no navegador segurando Ctrl e clique no endereço local para visualizar o projeto.
 
