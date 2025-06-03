@@ -51,26 +51,51 @@ Criar uma aplicação web completa com React, implementando páginas principais 
 
 ---
 
-## 📂 Estrutura de Diretórios (Exemplo)
+## 📂 Estrutura de Diretórios Principais
 
 ```
-src/
-│
-├── components/
-│   ├── Header.jsx
-│   ├── Footer.jsx
-│   └── ProductCard.jsx
-│
-├── pages/
-│   ├── HomePage.jsx
-│   ├── ProductListingPage.jsx
-│   └── ProductViewPage.jsx
-│
-├── assets/
-│   └── images/
-│
+├── src/
+│   ├── compoments/
+│   │   ├── ActionCar.jsx
+│   │   ├── ActionRegLog.jsx
+│   │   ├── Breadcrumb.jsx
+│   │   ├── BuyBox.jsx
+│   │   ├── CategoryCard.jsx
+│   │   ├── CategoryListing.jsx
+│   │   ├── CollectionCard.jsx
+│   │   ├── CollectionListing.jsx
+│   │   ├── FilterGroup.jsx
+│   │   ├── FilterSidebar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── Header.jsx
+│   │   ├── HeroSlider.jsx
+│   │   ├── Layout.jsx
+│   │   ├── Logo.jsx
+│   │   ├── MenuItems.jsx
+│   │   ├── NavSidebar.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductFilters.jsx
+│   │   ├── ProductListing.jsx
+│   │   ├── ProductOptions.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── Section.jsx
+│   │   └── SortBy.jsx
+│   ├── context/
+│   │   └── CartContext.jsx
+│   ├── data/
+│   │   └── SiteData.jsx
+│   ├── hooks/
+│   │   └── useQueryParams.jsx
+│   └── pages/
+│       ├── ContactPage.jsx
+│       ├── HomePage.jsx
+│       ├── NotFoundPage.jsx
+│       ├── ProductListingPage.jsx
+│       ├── ProductViewPage.jsx
+│       └── UnderConstructionPage.jsx
 ├── App.jsx
-└── main.jsx
+└── index.jsx
 ```
 
 ---
