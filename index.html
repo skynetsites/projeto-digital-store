@@ -6,17 +6,6 @@
     <link rel="icon" type="image/png" href="/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Store</title>
-    <script>
-      (function () { // Executa a correção de URL ANTES do React carregar
-        const params = new URLSearchParams(window.location.search);
-        const redirect = params.get('redirect');
-
-        if (redirect) {
-          // Remove o parâmetro da URL sem recarregar a página
-          window.history.replaceState(null, '', redirect);
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>
