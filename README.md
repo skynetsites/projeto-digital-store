@@ -129,12 +129,9 @@ Siga os passos abaixo para clonar, instalar e rodar o projeto em sua máquina:
 
    ➜  Local:   http://localhost:5173/
 
-  
-  Abra no navegador segurando Ctrl e clique no endereço local para visualizar o projeto.
+Abra no navegador segurando Ctrl e clique no endereço local para visualizar o projeto.
 
----
-
-✅ Requisitos
+OBS.: Requisitos importantes para execução do projeto:
 
 - Node.js versão 16 ou superior
 - npm (ou yarn)
