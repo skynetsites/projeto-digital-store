@@ -49,13 +49,13 @@ const ProductCard = ({ id, badge, name, image, category, price, price2 }) => {
                   {new Intl.NumberFormat("pt-BR", {
                     style: "currency",
                     currency: "BRL",
-                  }).format(Number(price))}
+                  }).format(Number(price2))}
                 </span>
                 <span>
                   {new Intl.NumberFormat("pt-BR", {
                     style: "currency",
                     currency: "BRL",
-                  }).format(Number(price2))}
+                  }).format(Number(price))}
                 </span>
               </>
             ) : (
