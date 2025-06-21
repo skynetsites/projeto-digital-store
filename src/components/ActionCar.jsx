@@ -121,13 +121,13 @@ const ActionCar = () => {
                           {new Intl.NumberFormat("pt-BR", {
                             style: "currency",
                             currency: "BRL",
-                          }).format(normalPrice)}
+                          }).format(promoPrice)}
                         </span>
                         <span>
                           {new Intl.NumberFormat("pt-BR", {
                             style: "currency",
                             currency: "BRL",
-                          }).format(promoPrice)}
+                          }).format(normalPrice)}
                         </span>
                       </>
                     ) : (
