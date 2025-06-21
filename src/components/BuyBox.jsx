@@ -89,12 +89,12 @@ const BuyBox = ({ product, products }) => {
         <div className="flex align-items-baseline text-sm font-bold text-base">
           {discount ? (
             <>
-              <span className="ml-1 font-semibold text-gray-800">{original.symbol}</span>
-              <span className="text-4xl">{original.integer}</span>
-              <span>{original.cents}</span>
+              <span className="ml-1 font-semibold text-gray-800">{discount.symbol}</span>
+              <span className="text-4xl">{discount.integer}</span>
+              <span>{discount.cents}</span>
               <span className="ml-2 text-gray-500 line-through">
-                {discount.integer}
-                {discount.cents}
+                {original.integer}
+                {original.cents}
               </span>
             </>
           ) : (
