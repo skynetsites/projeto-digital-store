@@ -1,4 +1,4 @@
-# 🛍️ Projeto Digital Store - Front-end
+# Projeto Digital Store - Front-end
 
 Este projeto foi desenvolvido como parte do curso de **Desenvolvedor Web Full Stack - Online - 2.0** da **Geração Tech**, com o objetivo de aplicar os conhecimentos adquiridos ao longo do curso utilizando **React** e boas práticas de desenvolvimento front-end. A base do projeto é a [documentação oficial](https://github.com/digitalcollegebr/projeto-digital-store) e o layout disponível no [Figma](https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=22-30).
 
