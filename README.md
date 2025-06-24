@@ -153,3 +153,12 @@ Link do deploy Vercel:
 
 - "Ordenar por" e "Filtrar por" estão implementados apenas funcional e visual.
 - Projeto realizado para fins de estudo e não representa uma loja real.
+
+---
+
+## 👨‍💻 Autor
+
+**Desenvolvido por:** Isaias Oliveira<br>
+**Curso:** Desenvolvedor Web Full Stack<br>
+**Créditos:** Projeto Geração Tech – Instituto Euvaldo Lodi (IEL)<br> 
+```
